@@ -16,7 +16,7 @@ Extract(운영DB, 데이터포털, SNS) -> Transform(Pandas, Spark ML, Spark, Ha
 
 위에 안쓰고 airflow standalone 일단 사용 예정
 
-** Flow
+## Flow
 
 -- Airflow --
 Mysql dump -> transform (pandas) -> load to s3 -> copy s3 to redshift
