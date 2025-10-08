@@ -15,7 +15,7 @@ Extract(운영DB, 데이터포털, SNS) -> Transform(Pandas, Spark ML, Spark, Ha
 1. 반드시 가상환경과 파일이 ~/airflow/dags 에 존재해야함 감시당할 위치
 위에 안쓰고 airflow standalone 일단 사용 예정
 
-## Flow
+### Flow
 
 -- Airflow --
 <br>
