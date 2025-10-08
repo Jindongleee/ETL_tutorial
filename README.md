@@ -23,7 +23,9 @@ Mysql dump -> transform (pandas) -> load to s3 -> copy s3 to redshift
 
 Airflow Connection 설정
 1. Mysql_default (docker create -> mysql), (mac os, ubuntu -> default IPv6 따라서
-   - host: 127.0.0.1, port:3306, db:ariflow_db)
+   - host: 127.0.0.1
+   - port:3306
+   - db:ariflow_db)
 ---
 2. AWS_S3_default, IAM (AmaazonS3FullAccess) 생성
    - AWS Access Key ID = IAM Access Key
@@ -35,7 +37,7 @@ Airflow Connection 설정
 3. redshift_dafault, IAM role 생성 redshift -> AmazonS3ReadOnlyAccess -> 네임스페이스 보안 및 암호화 IAM 역할 관리 -> role 연결 <반드시 퍼블릭 모드로 바꿔주기>
    - host: redshift 작업그룹 엔드포인트
    - User: 네임스페이스 user
-   - 비밀번호: 네임스페이스 -> 작업 토글 관리자 보안
+   - pwd: 네임스페이스 -> 작업 토글 관리자 보안
    - port: 5439
    - db: 네임스페이스 데이터베이스 이름
    - 추가 필드 JSON: {
