@@ -3,8 +3,6 @@ uv 기반 가상환경 사용
 # ETL_Project
 Extract(운영DB, 데이터포털, SNS) -> Transform(Pandas, Spark ML, Spark, Hadoop) -> Load(S3, AWS Redshift, GCP BigQuery), HBase) 사용예정
 
---
-
 ### airflow를 위해 .env 사용
 
 - cd [project 위치]
@@ -14,6 +12,7 @@ Extract(운영DB, 데이터포털, SNS) -> Transform(Pandas, Spark ML, Spark, Ha
    - airflow triggler
    - airflow dag-processor 
 
+1. 반드시 가상환경과 파일이 ~/airflow/dags 에 존재해야함 감시당할 위치
 위에 안쓰고 airflow standalone 일단 사용 예정
 
 ## Flow
