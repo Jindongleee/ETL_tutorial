@@ -19,6 +19,7 @@ Extract(운영DB, 데이터포털, SNS) -> Transform(Pandas, Spark ML, Spark, Ha
 ## Flow
 
 -- Airflow --
+<br>
 Mysql dump -> transform (pandas) -> load to s3 -> copy s3 to redshift
 
 Airflow Connection 설정
