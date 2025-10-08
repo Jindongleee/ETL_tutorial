@@ -33,7 +33,7 @@ Airflow Connection 설정
         "region_name": "ap-northeast-2"
      }
 ---
-3. redshift_dafault, IAM role 생성 redshift -> AmazonS3ReadOnlyAccess -> 네임스페이스 보안 및 암호화 IAM 역할 관리 -> role 연결
+3. redshift_dafault, IAM role 생성 redshift -> AmazonS3ReadOnlyAccess -> 네임스페이스 보안 및 암호화 IAM 역할 관리 -> role 연결 <반드시 퍼블릭 모드로 바꿔주기>
    - host: redshift 작업그룹 엔드포인트
    - User: 네임스페이스 user
    - 비밀번호: 네임스페이스 -> 작업 토글 관리자 보안
